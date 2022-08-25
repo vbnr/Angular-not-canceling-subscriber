@@ -1,3 +1,16 @@
+<p>Demonstrates what happens if we don't unsubsribe from an observable.</p>
+
+<p>
+  <b>How to test:</b> click on the 'Redirect to second component' and right
+  after that click on the 'Redirect to the first component'
+</p>
+
+<p>
+  We can see (<b>watch the console</b>) that even after we navigate out of the
+  second component the success callback of the subscriber is executed and prints
+  'Name 1'.
+</p>
+
 <button type="button" routerLink="first">Redirect to first component</button>
 <button type="button" routerLink="second">Redirect to second component</button>
 <router-outlet></router-outlet>
